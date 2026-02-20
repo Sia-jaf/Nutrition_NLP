@@ -1,5 +1,10 @@
 # OS files
 *.DS_Store
+FNDD*
+Food*
+
+# API key
+/Siavash/API.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
