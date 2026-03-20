@@ -1,5 +1,8 @@
 # Nutrition_NLP
 
+![Python Version](https://img.shields.io/badge/python-3.12-blue)
+![License](https://img.shields.io/github/license/your-username/Nutrition_NLP)
+
 This repository contains code and notebooks for deep learning and NLP analysis on nutrition and food description, focusing on clustering, classification, and embedding of food descriptions and nutrients.
 
 This project was mainly run on Google Colab engine with a GPU. For computational 
