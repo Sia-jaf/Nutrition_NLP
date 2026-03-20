@@ -1,11 +1,14 @@
 # Nutrition_NLP
 
 ![Python Version](https://img.shields.io/badge/python-3.12-blue)
-![License](https://img.shields.io/github/license/your-username/Nutrition_NLP)
+![License](https://img.shields.io/github/license/sia-jaf/Nutrition_NLP)
 
 This repository contains code and notebooks for deep learning and NLP analysis on nutrition and food description, focusing on clustering, classification, and embedding of food descriptions and nutrients.
 
-This project was mainly run on Google Colab engine with a GPU. For computational 
+## Goal
+
+This project applies Natural Language Processing (NLP) to structure and analyze complex, unstructured food description data from the USDA. The primary objective was to create parsimonious, sensible categories for the foods in the database. Applying natural language processing and k-means clustering to unstructured text enables downstream applications such as classifying new, previously unseen foods.
+
 
 ## Project Workflow
 
@@ -35,12 +38,11 @@ This project was mainly run on Google Colab engine with a GPU. For computational
 	- Assigns descriptive names to clusters and compares cluster assignments to known food categories.  
 	- Finds that embedding-based clusters outperform nutrient-based clusters in terms of interpretability.
 
-## Data
+## Notes
 
-- The `data/` folder contains all raw and processed data files, including:
-  - USDA FoodData Central CSVs
-  - Parquet files with processed and clustered data
-- The path to the data on notebooks points to the google drive. For local implementation, that path needs to be adjusted. 
+- Data: Due to sheer size of the raw data sizes provided by USDA, we recommend downloading the datasets from [DataCenter](https://fdc.nal.usda.gov/download-datasets). Then starting at the beginning of the workflow.
+- Path: The path to the data on notebooks points to the google drive. For local implementation, that path needs to be adjusted. 
+- Device: This project was mainly run on Google Colab engine with a GPU. For computational 
 
 ## Usage
 
@@ -50,6 +52,8 @@ This project was mainly run on Google Colab engine with a GPU. For computational
 ## Requirements
 
 - For creating a Python env see `requirements.txt`
-- 
 
+## Update
+
+Authors will turn the notebooks into a python library to develope the code more robust. 
 
