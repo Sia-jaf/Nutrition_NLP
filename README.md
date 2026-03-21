@@ -13,36 +13,42 @@ This project applies Natural Language Processing (NLP) to structure and analyze 
 ## Project Workflow
 
 1. **Data Preparation**  
-	- Notebook: `FDCnlp1prepare.ipynb`  
 	- Loads and preprocesses food and nutrient data from the USDA FoodData Central datasets.  
 	- Cleans, merges, and prepares tables for downstream analysis.
+	
+	See notebook [`FDCnlp1prepare.ipynb'](notebooks/FDCnlp1prepare.ipynb).
 
 2. **Sentence Embeddings**  
-	- Notebook: `FDCnlp2sentencetransformers.ipynb`  
+  
 	- Applies sentence transformers to food descriptions to generate embeddings.  
 	- Outputs a large dataframe with food items and their vector representations.
 
-3. **Clustering**  
-	- Notebook: `FDCnlp3kmeanscluster.ipynb`  
+	See notebook [`FDCnlp2sentencetransformers.ipynb'](notebooks/FDCnlp2sentencetransformers.ipynb).
+
+3. **Clustering**    
 	- Performs KMeans clustering on the sentence embeddings and nutrient profiles.  
 	- Assigns cluster labels to each food item for both embedding-based and nutrient-based clusters.
 
-4. **Cluster Analysis**  
-	- Notebook: `FDCnlp4clusternutrients.ipynb`  
+	See notebook [`FDCnlp3kmeanscluster.ipynb'](notebooks/FDCnlp3kmeanscluster.ipynb.ipynb).
+
+4. **Cluster Analysis**    
 	- Analyzes the nutrient composition of each cluster.  
 	- Compares clusters to USDA-supplied food categories.
 
-5. **Cluster Evaluation**  
-	- Notebook: `FDCnlp5evaluateclusters.ipynb`  
+	See notebook [`FDCnlp4clusternutrients.ipynb'](notebooks/FDCnlp4clusternutrients.ipynb).
+
+5. **Cluster Evaluation**    
 	- Evaluates the quality of clusters using silhouette scores and gap statistics.  
 	- Assigns descriptive names to clusters and compares cluster assignments to known food categories.  
 	- Finds that embedding-based clusters outperform nutrient-based clusters in terms of interpretability.
 
+	See notebook [`FDCnlp5evaluateclusters.ipynb'](notebooks/FDCnlp5evaluateclusters.ipynb).
+
 ## Notes
 
-- Data: Due to sheer size of the raw data sizes provided by USDA, we recommend downloading the datasets from [DataCenter](https://fdc.nal.usda.gov/download-datasets). Then starting at the beginning of the workflow.
-- Path: The path to the data on notebooks points to the google drive. For local implementation, that path needs to be adjusted. 
-- Device: This project was mainly run on Google Colab engine with a GPU. For computational 
+- **Data**: Due to sheer size of the raw data sizes provided by USDA, we recommend downloading the datasets from [DataCenter](https://fdc.nal.usda.gov/download-datasets). Then starting at the beginning of the workflow.
+- **Path**: The path to the data on notebooks points to the google drive. For local implementation, that path needs to be adjusted. 
+- **Computational device**: This project was mainly run on Google Colab engine with a GPU. For computational 
 
 ## Usage
 
@@ -50,10 +56,10 @@ This project applies Natural Language Processing (NLP) to structure and analyze 
 - Each notebook is self-contained and documents its own dependencies and outputs.
 
 ## Requirements
-
+- Download the raw data set from USDA.
 - For creating a Python env see `requirements.txt`
 
 ## Update
 
-Authors will turn the notebooks into a python library to develope the code more robust. 
+In future version, authors will turn the notebooks into a python library to make the code more accessible. 
 
